@@ -22,6 +22,7 @@ click$.pipe(
     tipo correctamente, y sino lo hace, se lo especificamos
     */
     // * Desestructuración de variables en JS y TS
+    // * Aplicado a RxJS usando el operador map
     map( ({ clientX, clientY }) => ({
         clientX,
         clientY
