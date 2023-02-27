@@ -18,6 +18,7 @@ import { observer } from '../observer';
 const url = 'https://api.github.com/users?per_page=5';
 const url1 = 'https://api.github.com/usersXXXXX?per_page=5';
 
+// ! Como mandamos el catchError, ya el observer se ejecuta y completa el observable
 // Manejamos el error de esta manera, así podemos aplicarle el tipado correcto
 const manejarErrores = (err: AjaxError) => {
     console.warn('error en: ', err.message);
